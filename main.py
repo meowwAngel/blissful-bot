@@ -1,3 +1,4 @@
+# made with <3 by pluto
 import discord
 from discord.ext import commands
 from discord import app_commands
@@ -29,5 +30,10 @@ async def coinflip(interaction: discord.Interaction):
     o = ['Heads', 'Tails']
     output = random.choice(o)
     await interaction.response.send_message(f'The coin landed on {output}')
+
+@bot.tree.command(name = 'astolfo')
+async def astolfo(interaction: discord.Interaction):
+    await interaction.response.send_message(f'http://fateextellalink.com/characters/astolfo/images/astolfo.png')
+
 
 bot.run(token)
