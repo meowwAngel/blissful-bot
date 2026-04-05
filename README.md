@@ -1,4 +1,4 @@
-# Install guide
+# How to download and use the bot
 1. Clone the repo using ```git clone https://github.com/OpenPluto/blissful-bot.git```
 2. Run requirements.bat or requirements.sh depending on your operating system
 3. Head to https://discord.com/developers/ and make a new bot, go to the bot and select the "bot" tab
