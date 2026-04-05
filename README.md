@@ -6,11 +6,13 @@
 <br>
 4. Click on reset token and copy it
 <br>
-5. Paste the token into .env variable
+5. Paste the token into .env file's token variable
 <br>
-6. Edit it how you want, I recommend watching some videos on how to use python.py or look at some reddit threads
+6. Get your api key for giphy and paste it into the .env file's api_key variable
 <br>
-7. Have fun :3
+7. Edit it how you want, I recommend watching some videos on how to use python.py or look at some reddit threads
+<br>
+8. Have fun :3
 
 # Tested on:
 Windows 11 using python version 3.14.3
