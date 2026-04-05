@@ -5,7 +5,6 @@ from discord import app_commands
 from dotenv import load_dotenv
 import os
 import random
-import math
 
 load_dotenv()
 
