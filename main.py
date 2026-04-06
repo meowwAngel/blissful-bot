@@ -58,7 +58,7 @@ async def gif(ctx,*,q="cat"):
 
 #uhnime / command
 @bot.tree.command(name='gif')
-async def gif(interaction: discord.Interaction, q: str = "Anime"):
+async def gif(interaction: discord.Interaction, q: str = "catgirl"):
     api_instance = giphy_client.DefaultApi()
     try:
         api_response = api_instance.gifs_search_get(api_key, q, limit=5, rating='g')
