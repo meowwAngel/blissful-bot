@@ -35,7 +35,7 @@ async def astolfo(interaction: discord.Interaction):
     await interaction.response.send_message(f'http://fateextellalink.com/characters/astolfo/images/astolfo.png')
 #uhnime
 @bot.command(name = 'gif')
-async def gif(ctx,*,q="Anime"):
+async def gif(ctx,*,q="astolfo"):
     api_instance = giphy_client.DefaultApi()
     try:
         api_response = api_instance.gifs_search_get(api_key, q, limit=5, rating='g')
@@ -68,5 +68,33 @@ async def rawr(interaction: discord.Interaction):
 @bot.tree.command(name = 'meow')
 async def meow(interaction: discord.Interaction):
     await interaction.response.send_message(f'meow :3')
+@bot.command(name = 'rawr')
+async def rawr(ctx,*,q="rawr"):
+    api_instance = giphy_client.DefaultApi()
+    try:
+        api_response = api_instance.gifs_search_get(api_key, q, limit=5, rating='g')
+        lst = list(api_response.data)
+        giff = random.choice(lst)
+
+        embed = discord.Embed(title=q)
+        embed.set_image(url=f"https://media.giphy.com/media/{giff.id}/giphy.gif")
+
+        await ctx.channel.send(embed=embed)
+    except ApiException as r:
+        print("Exception from api")
+@bot.command(name = 'meow')
+async def meow(ctx,*,q="meow"):
+    api_instance = giphy_client.DefaultApi()
+    try:
+        api_response = api_instance.gifs_search_get(api_key, q, limit=5, rating='g')
+        lst = list(api_response.data)
+        giff = random.choice(lst)
+
+        embed = discord.Embed(title=q)
+        embed.set_image(url=f"https://media.giphy.com/media/{giff.id}/giphy.gif")
+
+        await ctx.channel.send(embed=embed)
+    except ApiException as r:
+        print("Exception from api")
 #start bot
 bot.run(token)
