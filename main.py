@@ -64,10 +64,30 @@ async def gif(interaction: discord.Interaction, q: str = "catgirl"):
 #rawr
 @bot.tree.command(name = 'rawr')
 async def rawr(interaction: discord.Interaction):
-    await interaction.response.send_message(f'*rawr~*')
+    q: str = "rawr"
+    api_instance = giphy_client.DefaultApi()
+    try:
+        api_response = api_instance.gifs_search_get(api_key, q, limit=5, rating='g')
+        lst = list(api_response.data)
+        giff = random.choice(lst)
+        embed = discord.Embed(title=q)
+        embed.set_image(url=f"https://media.giphy.com/media/{giff.id}/giphy.gif")
+        await interaction.response.send_message(embed=embed)
+    except ApiException as r:
+        print("Exception from api")
 @bot.tree.command(name = 'meow')
 async def meow(interaction: discord.Interaction):
-    await interaction.response.send_message(f'meow :3')
+    q: str = "meow"
+    api_instance = giphy_client.DefaultApi()
+    try:
+        api_response = api_instance.gifs_search_get(api_key, q, limit=5, rating='g')
+        lst = list(api_response.data)
+        giff = random.choice(lst)
+        embed = discord.Embed(title=q)
+        embed.set_image(url=f"https://media.giphy.com/media/{giff.id}/giphy.gif")
+        await interaction.response.send_message(embed=embed)
+    except ApiException as r:
+        print("Exception from api")
 @bot.command(name = 'rawr')
 async def rawr(ctx,*,q="rawr"):
     api_instance = giphy_client.DefaultApi()
