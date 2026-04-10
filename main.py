@@ -64,7 +64,7 @@ async def gif(interaction: discord.Interaction, q: str = "catgirl"):
 #rawr
 @bot.tree.command(name = 'rawr')
 async def rawr(interaction: discord.Interaction):
-    q: str = "rawr"
+    q: str = "rawr~"
     api_instance = giphy_client.DefaultApi()
     try:
         api_response = api_instance.gifs_search_get(api_key, q, limit=5, rating='g')
@@ -77,7 +77,7 @@ async def rawr(interaction: discord.Interaction):
         print("Exception from api")
 @bot.tree.command(name = 'meow')
 async def meow(interaction: discord.Interaction):
-    q: str = "meow"
+    q: str = "catgirl"
     api_instance = giphy_client.DefaultApi()
     try:
         api_response = api_instance.gifs_search_get(api_key, q, limit=5, rating='g')
