@@ -35,7 +35,7 @@ async def astolfo(interaction: discord.Interaction):
     await interaction.response.send_message(f'http://fateextellalink.com/characters/astolfo/images/astolfo.png')
 #uhnime
 @bot.command(name = 'gif')
-async def gif(ctx,*,q="astolfo"):
+async def gif(ctx,*,q="catgirl"):
     api_instance = giphy_client.DefaultApi()
     try:
         api_response = api_instance.gifs_search_get(api_key, q, limit=5, rating='g')
@@ -50,7 +50,7 @@ async def gif(ctx,*,q="astolfo"):
         print("Exception from api")
 #uhnime / command
 @bot.tree.command(name='gif')
-async def gif(interaction: discord.Interaction, q: str = "astolfo"):
+async def gif(interaction: discord.Interaction, q: str = "catgirl"):
     api_instance = giphy_client.DefaultApi()
     try:
         api_response = api_instance.gifs_search_get(api_key, q, limit=5, rating='g')
@@ -64,57 +64,22 @@ async def gif(interaction: discord.Interaction, q: str = "astolfo"):
 #rawr
 @bot.tree.command(name = 'rawr')
 async def rawr(interaction: discord.Interaction):
-    q: str = "rawr~"
-    api_instance = giphy_client.DefaultApi()
-    try:
-        api_response = api_instance.gifs_search_get(api_key, q, limit=5, rating='g')
-        lst = list(api_response.data)
-        giff = random.choice(lst)
-        embed = discord.Embed(title=q)
-        embed.set_image(url=f"https://media.giphy.com/media/{giff.id}/giphy.gif")
-        await interaction.response.send_message(embed=embed)
-    except ApiException as r:
-        print("Exception from api")
+    await interaction.response.send_message('https://tenor.com/bFGYi.gif')
+
 @bot.tree.command(name = 'meow')
 async def meow(interaction: discord.Interaction):
-    q: str = "catgirl"
-    api_instance = giphy_client.DefaultApi()
-    try:
-        api_response = api_instance.gifs_search_get(api_key, q, limit=5, rating='g')
-        lst = list(api_response.data)
-        giff = random.choice(lst)
-        embed = discord.Embed(title='meow :3')
-        embed.set_image(url=f"https://media.giphy.com/media/{giff.id}/giphy.gif")
-        await interaction.response.send_message(embed=embed)
-    except ApiException as r:
-        print("Exception from api")
+    await interaction.response.send_message('https://tenor.com/8ijz.gif')
+@bot.tree.command(name = 'freaky')
+async def freaky(interaction: discord.Interaction):
+    await interaction.response.send_message('https://media.giphy.com/media/vPzbDN4rBxuvtpSpzF/giphy.gif')
 @bot.command(name = 'rawr')
-async def rawr(ctx,*,q="rawr~"):
-    api_instance = giphy_client.DefaultApi()
-    try:
-        api_response = api_instance.gifs_search_get(api_key, q, limit=5, rating='g')
-        lst = list(api_response.data)
-        giff = random.choice(lst)
-
-        embed = discord.Embed(title=q)
-        embed.set_image(url=f"https://media.giphy.com/media/{giff.id}/giphy.gif")
-
-        await ctx.channel.send(embed=embed)
-    except ApiException as r:
-        print("Exception from api")
+async def rawr(ctx):
+    await ctx.channel.send('https://tenor.com/bFGYi.gif')
 @bot.command(name = 'meow')
-async def meow(ctx,*,q="catgirl"):
-    api_instance = giphy_client.DefaultApi()
-    try:
-        api_response = api_instance.gifs_search_get(api_key, q, limit=5, rating='g')
-        lst = list(api_response.data)
-        giff = random.choice(lst)
-
-        embed = discord.Embed(title='meow :3')
-        embed.set_image(url=f"https://media.giphy.com/media/{giff.id}/giphy.gif")
-
-        await ctx.channel.send(embed=embed)
-    except ApiException as r:
-        print("Exception from api")
+async def meow(ctx):
+        await ctx.channel.send('https://tenor.com/8ijz.gif')
+@bot.command(name = 'freaky')
+async def freaky(ctx):
+        await ctx.channel.send('https://media.giphy.com/media/vPzbDN4rBxuvtpSpzF/giphy.gif')
 #start bot
 bot.run(token)
