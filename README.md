@@ -17,4 +17,4 @@
 9. Have fun :3
 
 # Tested on:
-Windows 11 using python version 3.14.3
+Windows 11 25HZ with Bash,Command Prompt,Powershell using python314
