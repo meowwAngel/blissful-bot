@@ -1,110 +1,24 @@
-ANGEL LICENSE (PROPRIETARY SOURCE-AVAILABLE SOFTWARE LICENSE)
-Version 1.1
-Effective Date: 2026
+This is free and unencumbered software released into the public domain.
 
-Copyright (c) 2026 angel
+Anyone is free to copy, modify, publish, use, compile, sell, or
+distribute this software, either in source code form or as a compiled
+binary, for any purpose, commercial or non-commercial, and by any
+means.
 
-1. DEFINITIONS
+In jurisdictions that recognize copyright laws, the author or authors
+of this software dedicate any and all copyright interest in the
+software to the public domain. We make this dedication for the benefit
+of the public at large and to the detriment of our heirs and
+successors. We intend this dedication to be an overt act of
+relinquishment in perpetuity of all present and future rights to this
+software under copyright law.
 
-"Software" means the software and associated documentation files provided under this License.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
 
-"You" or "Licensee" means the individual or legal entity exercising rights under this License.
-
-"Use" means to install, execute, run, or interact with the Software.
-
-"Copy" means any reproduction of the Software, including loading into memory, storage, or backups.
-
-"Modify" means to alter, adapt, or create derivative works of the Software.
-
-2. LICENSE GRANT
-
-Subject to your compliance with this License, the copyright holder grants you a limited,
-non-exclusive, non-transferable, revocable license to Use the Software solely for
-personal or internal business purposes.
-
-This License is intended to be a proprietary, source-available license. It does not grant
-any rights to distribute, sublicense, or commercially exploit the Software.
-
-3. PERMITTED USES
-
-You may:
-- Use the Software for personal, educational, or internal organizational purposes;
-- Copy the Software as reasonably necessary to install, execute, back up, and operate it,
-  including ephemeral copies created during normal system or CI/CD processes;
-- Modify the Software solely for your own personal or internal use.
-
-Modified versions remain subject to this License and may not be distributed.
-
-4. RESTRICTIONS
-
-You shall not, and shall not permit any third party to:
-- Copy, reproduce, distribute, or make available the Software outside your organization;
-- Sell, resell, license, sublicense, lease, rent, or otherwise commercially exploit the Software;
-- Provide the Software to third parties, except to contractors acting on your behalf under
-  confidentiality obligations and solely for your internal use;
-- Publish, host, or make the Software accessible as a service to third parties;
-- Reverse engineer, decompile, or disassemble the Software, except to the extent permitted
-  by applicable law for interoperability or other legally protected purposes;
-- Remove or alter any proprietary notices.
-
-5. OWNERSHIP AND INTELLECTUAL PROPERTY
-
-The Software is licensed, not sold. All rights, title, and interest in and to the Software,
-including all intellectual property rights, remain with the copyright holder.
-
-No patent rights are granted under this License.
-
-6. TERMINATION
-
-This License terminates automatically if you materially breach its terms.
-
-Where reasonably possible, the copyright holder may provide notice of breach and allow
-a period of thirty (30) days to cure the violation before termination takes effect.
-
-Upon termination, you must cease all use of the Software and delete all copies within
-your possession or control, except to the extent retention is required by law.
-
-Sections relating to ownership, restrictions, liability, and governing law shall survive termination.
-
-7. GOVERNING LAW
-
-This License shall be governed by the laws of Canada.
-
-To the extent permitted by applicable law, disputes may be brought in the courts of Canada.
-Nothing in this section limits rights granted under mandatory consumer protection laws.
-
-8. SEVERABILITY
-
-If any provision of this License is held invalid or unenforceable, the remaining provisions
-shall remain in full force and effect.
-
-9. WAIVER
-
-Failure to enforce any provision of this License shall not constitute a waiver.
-
-10. LIMITATION OF LIABILITY
-
-TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE SOFTWARE IS PROVIDED WITHOUT LIABILITY
-FOR INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES.
-
-TOTAL LIABILITY SHALL NOT EXCEED THE GREATER OF:
-(A) THE AMOUNT PAID FOR THE SOFTWARE; OR
-(B) CAD $100.
-
-THIS LIMITATION DOES NOT APPLY WHERE PROHIBITED BY LAW, INCLUDING LIABILITY FOR DEATH,
-PERSONAL INJURY, OR WILLFUL MISCONDUCT.
-
-11. DISCLAIMER OF WARRANTY
-
-THE SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
-INCLUDING BUT NOT LIMITED TO MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
-AND NONINFRINGEMENT.
-
-12. ENTIRE AGREEMENT
-
-This License constitutes the entire agreement between you and the copyright holder
-regarding the Software.
-
-13. ASSIGNMENT
-
-You may not assign this License without prior written consent.
+For more information, please refer to <https://unlicense.org>
