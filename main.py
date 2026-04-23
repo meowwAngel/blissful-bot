@@ -100,5 +100,17 @@ async def help(interaction: discord.Interaction):
     embed.add_field(name="/freaky", value="Sends a freaky cat GIF", inline=False)
     embed.add_field(name="/license", value="Provides a link to the bot's license on GitHub", inline=False)
     await interaction.response.send_message(embed=embed, ephemeral=True)
+bot.command(name = 'help')
+async def help(ctx):
+    embed = discord.Embed(title="Blissful Bot Commands", description="Here are the available commands for Blissful Bot:")
+    embed.add_field(name="/ping", value="Responds with 'pong'", inline=False)
+    embed.add_field(name="/coinflip", value="Flips a coin and returns Heads or Tails", inline=False)
+    embed.add_field(name="/astolfo", value="Sends a picture of Astolfo", inline=False)
+    embed.add_field(name="/gif [query]", value="Searches for a GIF based on the provided query (default: catgirl)", inline=False)
+    embed.add_field(name="/rawr", value="Sends a rawr cat GIF", inline=False)
+    embed.add_field(name="/meow", value="Sends a meow cat GIF", inline=False)
+    embed.add_field(name="/freaky", value="Sends a freaky cat GIF", inline=False)
+    embed.add_field(name="/license", value="Provides a link to the bot's license on GitHub", inline=False)
+    await ctx.channel.send(embed=embed)
 #start bot
 bot.run(token)
