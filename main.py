@@ -81,12 +81,24 @@ async def meow(ctx):
 @bot.command(name = 'freaky')
 async def freaky(ctx):
         await ctx.channel.send('https://tenor.com/view/freaky-cat-cat-freaky-cat-freaky-tongue-freaky-cat-tongue-freaky-tongue-gif-11560619178986255398')
-
 @bot.tree.command(name = 'license')
 async def license(interaction: discord.Interaction):
     await interaction.response.send_message('https://github.com/OpenPluto/blissful-bot/blob/main/LICENSE')
 @bot.command(name = 'license')
 async def license(ctx):
     await ctx.channel.send('https://github.com/OpenPluto/blissful-bot/blob/main/LICENSE')
+#help
+@bot.tree.command(name = 'help')
+async def help(interaction: discord.Interaction):
+    embed = discord.Embed(title="Blissful Bot Commands", description="Here are the available commands for Blissful Bot:")
+    embed.add_field(name="/ping", value="Responds with 'pong'", inline=False)
+    embed.add_field(name="/coinflip", value="Flips a coin and returns Heads or Tails", inline=False)
+    embed.add_field(name="/astolfo", value="Sends a picture of Astolfo", inline=False)
+    embed.add_field(name="/gif [query]", value="Searches for a GIF based on the provided query (default: catgirl)", inline=False)
+    embed.add_field(name="/rawr", value="Sends a rawr cat GIF", inline=False)
+    embed.add_field(name="/meow", value="Sends a meow cat GIF", inline=False)
+    embed.add_field(name="/freaky", value="Sends a freaky cat GIF", inline=False)
+    embed.add_field(name="/license", value="Provides a link to the bot's license on GitHub", inline=False)
+    await interaction.response.send_message(embed=embed, ephemeral=True)
 #start bot
 bot.run(token)
